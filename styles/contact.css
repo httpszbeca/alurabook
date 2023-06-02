@@ -1,0 +1,67 @@
+.contact {
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.contact__title , .contact__text{
+   background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact__title {
+  font-size: 1.12rem;
+  font-weight: 500;
+}
+
+.contact__text {
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.contact__input::placeholder {
+  background: url(../assets/mail_black_24dp\ 1.svg) no-repeat;
+  padding-left: 2rem;
+  color: var(--blue);
+}
+
+.contact__input {
+  border: 1px solid var(--blue);
+  border-radius: 1.5rem;
+  padding: 1rem ;
+  width: 90%;
+  font-family: var(--principal-font);
+  color: var(--blue);
+}
+
+@media screen and (min-width:1024px){
+  .contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contact__description {
+      padding: 1.5rem;
+      margin: 0 2rem 0 5rem;
+    }
+  
+    .contact input {
+      width: 50%;
+    }
+
+    .contact__title{
+      font-size: 1.5rem;
+    }
+
+   
+}
+
+@media screen and (min-width:1728px){
+  .contact{
+    padding: 3rem 25vh;
+  }
+
+  
+}
